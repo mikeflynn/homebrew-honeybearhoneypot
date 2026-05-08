@@ -5,21 +5,21 @@
 class Honeybearhoneypot < Formula
   desc "Whimsical SSH honeypot with a Fyne GUI"
   homepage "https://honeybear.hydrox.fun"
-  version "1.5.3"
+  version "1.6"
   license "GPL-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/mikeflynn/honeybearhoneypot/releases/download/v1.5.3/honeybearhoneypot_darwin_amd64.tar.gz"
-      sha256 "7c9bf8f61e344e47797dd25846662a315f903f072774baecfe7bca63c2389ed6"
+      url "https://github.com/mikeflynn/honeybearhoneypot/releases/download/v1.6/honeybearhoneypot_darwin_amd64.tar.gz"
+      sha256 "5fb5bfe95ce267d7b7fe15f525299f800b45c078b474f7b9735bdfae3721d1a4"
 
       define_method(:install) do
         bin.install "honeybearhoneypot"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/mikeflynn/honeybearhoneypot/releases/download/v1.5.3/honeybearhoneypot_darwin_arm64.tar.gz"
-      sha256 "efffd7d0212bec587b2e675b9f610ed2ee4aabf72a4062c7ca81cbb9d84bb822"
+      url "https://github.com/mikeflynn/honeybearhoneypot/releases/download/v1.6/honeybearhoneypot_darwin_arm64.tar.gz"
+      sha256 "96feb000623dbcfa9f5fb01bb053a2d45b52ae9a03ebb940d68f073dd804504e"
 
       define_method(:install) do
         bin.install "honeybearhoneypot"
@@ -29,15 +29,15 @@ class Honeybearhoneypot < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mikeflynn/honeybearhoneypot/releases/download/v1.5.3/honeybearhoneypot_linux_amd64.tar.gz"
-      sha256 "dcf90c054ddcfb243d260768e92f0937a60bb19705c3cf982de040ad40bdf6dc"
+      url "https://github.com/mikeflynn/honeybearhoneypot/releases/download/v1.6/honeybearhoneypot_linux_amd64.tar.gz"
+      sha256 "8ee0cd8e5d29d8d72a3984560c48d5e16723ab920101fab39a948c1f63905dd2"
       define_method(:install) do
         bin.install "honeybearhoneypot"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mikeflynn/honeybearhoneypot/releases/download/v1.5.3/honeybearhoneypot_linux_arm64.tar.gz"
-      sha256 "0121776e9b2aef4223ea79b70411e0d1efd85f85cf6f8d685918c8d88d674348"
+      url "https://github.com/mikeflynn/honeybearhoneypot/releases/download/v1.6/honeybearhoneypot_linux_arm64.tar.gz"
+      sha256 "ef020cbbd6e74fc08187044f6f981bc0ec27c06e7e93d1a6b4ff64ce89856971"
       define_method(:install) do
         bin.install "honeybearhoneypot"
       end
